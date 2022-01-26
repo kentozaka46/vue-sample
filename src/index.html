@@ -11,14 +11,12 @@
         {{ message }}
     </div>
 
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue!'
-            }
-        })
-    </script>
+    <div id="app1">
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
