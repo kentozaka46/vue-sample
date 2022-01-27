@@ -12,6 +12,13 @@ var app2 = new Vue({
     }
 })
 
+var app3 = new Vue({
+    el: '#app-3',
+    data: {
+        seen: true
+    }
+})
+
 var app1 = new Vue({
     el: '#app1',
     data: {
