@@ -7,38 +7,19 @@
 </head>
 
 <body>
-    <div id="app">
-        {{ message }}
+    <div id="demo">
+        <p class="title">zipcode to address demo</p>
+        <input v-model="inputZip" :placeholder="computedZip" v-on:keypress.enter="getAddress(computedZip)" maxlength="7">
+        <button @click="getAddress(computedZip)">boom</button>
+        <div class="result">
+            <transition name="trans">
+
+                <p class="res" :key="results">{{results}}</p>
+                <!--  {{inputZip | filterZip}} -->
+            </transition>
+        </div>
     </div>
 
-    <div id="app-2">
-        <span v-bind:title="message">
-          Hover your mouse over me for a few seconds
-          to see my dynamically bound title!
-        </span>
-    </div>
-
-    <div id="app-3">
-        <span v-if="seen">Now you see me</span>
-    </div>
-
-    <div id="app-4">
-        <ol>
-            <li v-for="todo in todos">
-                {{ todo.text }}
-            </li>
-        </ol>
-    </div>
-
-    <div id="app-5">
-        <p>{{ message }}</p>
-        <button v-on:click="reverseMessage">Reverse Message</button>
-    </div>
-
-    <div id="app-6">
-        <p>{{ message }}</p>
-        <input v-model="message">
-    </div>
 
     <div id="app-7">
         <ol>
