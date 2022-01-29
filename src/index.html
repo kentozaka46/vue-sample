@@ -9,7 +9,7 @@
 
 <body>
     <div id="demo">
-        <p class="title">zipcode to address demo</p>
+        <p class="title">郵便番号検索</p>
         <input v-model="inputZip" :placeholder="computedZip" @keypress.enter="getAddress(computedZip)" maxlength="7">
         <button @click="getAddress(computedZip)">検索</button>
         <div class="result">
@@ -19,14 +19,6 @@
             </transition>
         </div>
     </div>
-
-
-    <div id="app-7">
-        <ol>
-            <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-        </ol>
-    </div>
-
 
     <script type="text/javascript" src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
