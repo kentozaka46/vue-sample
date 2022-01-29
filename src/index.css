@@ -1,0 +1,56 @@
+body {
+    background: #fff;
+}
+
+#demo {
+    text-align: center;
+}
+
+.title {
+    background: #999;
+    color: #fff;
+    width: 80%;
+    margin: 10px auto 30px auto;
+}
+
+input {
+    margin: auto;
+    border: solid 1px #666;
+}
+
+.result {
+    position: relative;
+    margin: 10px auto;
+}
+
+.result {
+    position: relative;
+    margin: 10px auto;
+}
+
+.result .res {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.trans-enter-active,
+.trans-leave-active {
+    transition: all .5s;
+}
+
+.trans-enter-to,
+.trans-leave {
+    opacity: 1;
+}
+
+.trans-enter {
+    opacity: 0;
+    transform: translate(-50%, 10px) !important;
+}
+
+.trans-leave-to {
+    opacity: 0;
+    transform: translate(-50%, -10px) !important;
+}
